@@ -36,8 +36,9 @@ var questionB = document.querySelector("#questionB")
 var questionIndex = 0;
 var startTime = 76;
 var timeLeft = document.querySelector("#timeLeft");
-var score = 0;
 var time;
+var score = 0;
+
 
 function startQuiz()
 {
@@ -109,8 +110,11 @@ function endQuiz()
   promptArea.innerHTML = "";
   optionArea.innerHTML = "";
   var finishedTitle = document.createElement("h1");
+  var finalScore = document.createElement("p");
+  var score = time;
   finishedTitle.textContent="All done!";
-  promptArea.append(finishedTitle);
+  finalScore.textContent = "Your final score is " + score;
+  promptArea.append(finishedTitle, finalScore);
 
   highscore()
 }

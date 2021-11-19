@@ -60,6 +60,11 @@ section .quiz-info
   font-size: 1.55vw;
 }
 
+.pStarter p
+{
+  text-align: center;
+}
+
 button
 {
   border: none;
@@ -87,4 +92,10 @@ button
 h1
 {
   text-align: left;
+}
+
+p
+{
+  text-align: left;
+  font-size: 1.55vw;
 }
